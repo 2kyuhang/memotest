@@ -65,6 +65,7 @@ public class MemoService {
     }
 
     //5. 게시글 삭제
+    @Transactional
     public String deleteMemo(MemoTestDeleteRequestDto requestDto) {
         MemoTest memo = findMemo(requestDto.getId());
 
